@@ -1,0 +1,6 @@
+<h1><%= @book.title %></h1>
+
+<p><%= @book.author %></p>
+<p><%= @book.content %></p>
+
+<%= link_to "Edit", edit_article_path(@book) if Current.user.admin? %>
